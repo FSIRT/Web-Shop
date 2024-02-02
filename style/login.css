@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-body {
+    display: flex;
+    width: 95%;
+    height: 90vh;
+}
+
+#container-left-side {
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 50%;
+    display: flex;
+}
+
+#container-right-side {
+    height: 90vh;
+    width: 50%;
+    background-color: rgba(217, 157, 4, 0.923);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-right-side:hover {
+    background-color: rgb(247, 188, 26)
+}
+
+#container-left-side-items {
+    width: 40%;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgb(220, 220, 220);
+    background-color: rgb(229, 229, 229);
+    font-size: 16px;
+    height: 40px;
+}
+
+input::placeholder {
+    font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    background-color: rgb(247, 188, 26);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    border-radius: 35px;
+    width: 100%;
+    font-size: 21px;
+}
+
+.password {
+    width: 100%;
+    padding: 10px;
+    color: #1f1f1f;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+    text-align: right;
+    text-align: center;
+}
+
+.password:hover {
+    color: #f1af00;
+}
+
+button:hover {
+    background-color: rgb(229, 174, 22)
+}
+
+.signUp {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#error-message {
+    color: red;
+    text-align: center;
+    font-size: 14px;
+
+}
+
+#fa-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.backHome {
+    width: 100%;
+    background-color: #e5e5e5;
+}
+
+.backHome:hover {
+    background-color: #f1af00;
+}
+
+#password-reset {
+    text-align: center;
+}

@@ -1,0 +1,99 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow the items to wrap to the next line */
+    justify-content: center; /* Align items at the start */
+    align-items: center; /* Center items vertically */
+    overflow-y: auto; /* y for vertical scroll */
+    /*height: 70vh;*/
+    min-height: 70vh;
+    margin-left: 7%;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column; /* Stack item content vertically */
+    background-color: rgba(212, 212, 212, 0.786);
+    border: 1px solid #ccc;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    height: 45vh;
+    margin-right: 30px; /* Add some margin to the right of each item */
+    flex: 1 0 100%; /* By default, take 100% of the row */
+}
+
+/* For screens larger than 768px, show 2 items per row */
+@media (min-width: 768px) {
+    .product-card {
+        flex: 1 0 48%; /* Take 48% of the row (leaving a bit for margins) */
+    }
+}
+
+/* For screens larger than 1080px, show 3 items per row */
+@media (min-width: 1080px) {
+    .product-card {
+        flex: 1 0 30%; /* Take 30% of the row */
+    }
+}
+
+#headNavBar {
+    width: 95%;
+    height: 10vh;
+    background-color: rgba(32, 32, 32, 0.987);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+
+#product_images {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Use 'cover' if you want to fill the container while maintaining aspect ratio */
+    position: relative;
+}
+
+#heading {
+    color: black;
+}
+
+.product-container:first-child {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer {
+    margin-top: 1%;
+    border-radius: 10px;
+    background-color: rgba(196, 196, 196, 0.987);
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 6vh;
+}
+
+#img-head {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+#add-to-cart-button {
+    width: 100px;
+    height: 100px;
+}
+
+
+#dashboard-Button {
+    transition: all 0.5s ease;
+    width: 200px;
+    height: 100px;
+}
+
+#dashboard-Button.big {
+    width: 500px;
+    height: 100px;
+}
